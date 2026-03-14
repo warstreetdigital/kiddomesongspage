@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Posh Babies Kids and Teens & Kiddome Baby and Mum — Store Audio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Comic Neue', Inter, sans-serif;
+background:linear-gradient(135deg,#ffecd2,#fcb69f);
+color:#333;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+/* HERO */
+
+.hero{
+padding:70px 20px;
+background:linear-gradient(135deg,#fff0f5,#ffe4e1);
+text-align:center;
+border-bottom:3px solid #ffc0cb;
+}
+
+.hero h1{
+font-family:'Space Grotesk';
+font-size:38px;
+color:#ff1493;
+margin-bottom:12px;
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+font-size:16px;
+line-height:1.6;
+color:#555;
+}
+
+/* STORE SECTIONS */
+
+.store-section{
+max-width:900px;
+margin:50px auto;
+padding:0 16px;
+}
+
+.store-title{
+font-family:'Space Grotesk';
+font-size:28px;
+color:#ff1493;
+margin-bottom:8px;
+}
+
+.store-description{
+font-size:14px;
+color:#666;
+margin-bottom:24px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-gap:28px;
+}
+
+/* CARD */
+
+.audio-card{
+background:#fff8dc;
+border-radius:16px;
+padding:22px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+gap:10px;
+border:2px dashed #ff69b4;
+}
+
+.audio-card h2{
+font-family:'Space Grotesk';
+font-size:19px;
+color:#ff1493;
+}
+
+.use{
+font-size:13px;
+color:#666;
+line-height:1.5;
+}
+
+/* PLAYER */
+
+.player{
+width:100%;
+height:48px;
+background:#ffe4e1;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+font-weight:600;
+color:#ff1493;
+}
+
+.player.playing{
+background:#ffb6c1;
+color:white;
+}
+
+/* DOWNLOAD */
+
+.download-btn{
+display:inline-block;
+padding:11px 18px;
+border-radius:12px;
+background:#ffb6c1;
+color:white;
+text-decoration:none;
+font-weight:600;
+text-align:center;
+margin-top:6px;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:auto;
+text-align:center;
+padding:20px;
+font-size:12px;
+color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Posh Babies Kids and Teens & Kiddome Baby and Mum</h1>
+
+<p>
+A curated audio collection designed to support the atmosphere and marketing
+content of both retail stores. These tracks help create a welcoming
+family shopping experience while also supporting digital promotions,
+videos and brand storytelling.
+</p>
+
+</section>
+
+
+<!-- POSH BABIES STORE -->
+
+<section class="store-section">
+
+<div class="store-title">Posh Babies Kids and Teens</div>
+
+<div class="store-description">
+Audio designed to match the lively shopping experience of a children's retail store —
+perfect for in-store atmosphere and playful marketing content.
+</div>
+
+<div class="grid">
+
+<div class="audio-card">
+<h2>Morning Play</h2>
+<p class="use">Bright welcoming music designed for when families and children enter the store, creating a fun shopping atmosphere.</p>
+<div class="player" onclick="togglePlayer('pb1')">▶ Play</div>
+<audio id="pb1" src="/pb01.mp3"></audio>
+<a class="download-btn" href="/pb01.mp3" download>Download Track</a>
+</div>
+
+<div class="audio-card">
+<h2>Fun Time</h2>
+<p class="use">Energetic music ideal for store promotions, kids enjoying toys and outfits, and social media clips.</p>
+<div class="player" onclick="togglePlayer('pb2')">▶ Play</div>
+<audio id="pb2" src="/pb02.mp3"></audio>
+<a class="download-btn" href="/pb02.mp3" download>Download Track</a>
+</div>
+
+<div class="audio-card">
+<h2>Calm Moments</h2>
+<p class="use">Gentle background music suitable for relaxed shopping moments and baby product areas.</p>
+<div class="player" onclick="togglePlayer('pb3')">▶ Play</div>
+<audio id="pb3" src="/pb03.mp3"></audio>
+<a class="download-btn" href="/pb03.mp3" download>Download Track</a>
+</div>
+
+<div class="audio-card">
+<h2>Adventure</h2>
+<p class="use">Playful music great for marketing videos and storytelling content about kids exploring fun products.</p>
+<div class="player" onclick="togglePlayer('pb4')">▶ Play</div>
+<audio id="pb4" src="/pb04.mp3"></audio>
+<a class="download-btn" href="/pb04.mp3" download>Download Track</a>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- KIDDOME STORE -->
+
+<section class="store-section">
+
+<div class="store-title">Kiddome Baby and Mum</div>
+
+<div class="store-description">
+Audio that reflects the everyday shopping experience for mothers and babies —
+supporting in-store atmosphere and family-focused marketing content.
+</div>
+
+<div class="grid">
+
+<div class="audio-card">
+<h2>Family Moments</h2>
+<p class="use">Warm cheerful music capturing the feeling of mums shopping with their babies.</p>
+<div class="player" onclick="togglePlayer('kd1')">▶ Play</div>
+<audio id="kd1" src="/kd01.mp3"></audio>
+<a class="download-btn" href="/kd01.mp3" download>Download Track</a>
+</div>
+
+<div class="audio-card">
+<h2>Little Smiles</h2>
+<p class="use">Happy background music perfect for baby product displays and joyful store moments.</p>
+<div class="player" onclick="togglePlayer('kd2')">▶ Play</div>
+<audio id="kd2" src="/kd02.mp3"></audio>
+<a class="download-btn" href="/kd02.mp3" download>Download Track</a>
+</div>
+
+<div class="audio-card">
+<h2>Playful Discoveries</h2>
+<p class="use">Light playful music reflecting babies exploring toys and clothing inside the store.</p>
+<div class="player" onclick="togglePlayer('kd3')">▶ Play</div>
+<audio id="kd3" src="/kd03.mp3"></audio>
+<a class="download-btn" href="/kd03.mp3" download>Download Track</a>
+</div>
+
+<div class="audio-card">
+<h2>Fresh Morning</h2>
+<p class="use">Bright uplifting music suitable for store openings, morning shopping and promotional videos.</p>
+<div class="player" onclick="togglePlayer('kd4')">▶ Play</div>
+<audio id="kd4" src="/kd04.mp3"></audio>
+<a class="download-btn" href="/kd04.mp3" download>Download Track</a>
+</div>
+
+</div>
+</section>
+
+
+<div class="footer">
+© 2026 — Posh Babies Kids and Teens & Kiddome Baby and Mum
+</div>
+
+
+<script>
+
+const allAudios=['pb1','pb2','pb3','pb4','kd1','kd2','kd3','kd4'];
+
+function togglePlayer(id){
+
+allAudios.forEach(a=>{
+const audio=document.getElementById(a);
+const player=audio.previousElementSibling;
+
+if(a!==id){
+audio.pause();
+audio.currentTime=0;
+player.classList.remove('playing');
+player.innerText='▶ Play';
+}
+});
+
+const audio=document.getElementById(id);
+const player=audio.previousElementSibling;
+
+if(audio.paused){
+audio.play();
+player.classList.add('playing');
+player.innerText='⏸ Pause';
+}else{
+audio.pause();
+player.classList.remove('playing');
+player.innerText='▶ Play';
+}
+
+}
+
+</script>
+
+</body>
+</html>
